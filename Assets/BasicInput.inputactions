@@ -16,9 +16,27 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
+                    "name": "JumpStarted",
                     "type": "Button",
                     "id": "23c9bdb7-49c7-472c-9281-04f74b0da30a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "JumpFinished",
+                    "type": "Button",
+                    "id": "ddbcb904-d78c-49c2-8596-f3cd8c56146a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Escape",
+                    "type": "Button",
+                    "id": "8931e8c0-8871-4e21-ae0e-6ceeac5a8ae6",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -105,12 +123,56 @@
                 },
                 {
                     "name": "",
+                    "id": "eb5bffc7-9c66-4d90-bd83-c580e98f610f",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "JumpStarted",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "44667f69-de08-48a4-bce0-a965ef3ef281",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Jump",
+                    "action": "JumpStarted",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5bb8fd9-cfc2-49ca-ade8-d7c3cbd8463c",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "JumpFinished",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "06d1f56d-29a4-455d-9920-c455fa941113",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "JumpFinished",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6359c105-5439-447c-91ce-207af064bb05",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Escape",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

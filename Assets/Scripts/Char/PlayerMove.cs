@@ -23,22 +23,8 @@ public class PlayerMove : MonoBehaviour
         velocity.x = _horizontalDir * Speed;
         _rigidbody.linearVelocity = velocity;
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            jumpComponent.shouldJump = true;
-        }
+
     }
-
-    /*
-    public void Jump(InputAction.CallbackContext context)
-    {
-        _rigidbody.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
-    }
-
-    public void Move(InputAction.CallbackContext context)
-    {
-
-    }*/
 
     // NOTE: InputSystem: "move" action becomes "OnMove" method
     void OnMove(InputValue value)

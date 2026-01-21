@@ -5,6 +5,7 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField]
     private float Speed = 5.0f;
+    //private float salto = 100;
 
     Rigidbody2D _rigidbody;
     private float _horizontalDir; // Horizontal move direction value [-1, 1]
@@ -12,8 +13,8 @@ public class PlayerMove : MonoBehaviour
     Jump jumpComponent;
     void Start()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
         jumpComponent = GetComponent<Jump>();
+        _rigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
@@ -27,6 +28,17 @@ public class PlayerMove : MonoBehaviour
             jumpComponent.shouldJump = true;
         }
     }
+
+    /*
+    public void Jump(InputAction.CallbackContext context)
+    {
+        _rigidbody.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
+    }
+
+    public void Move(InputAction.CallbackContext context)
+    {
+
+    }*/
 
     // NOTE: InputSystem: "move" action becomes "OnMove" method
     void OnMove(InputValue value)

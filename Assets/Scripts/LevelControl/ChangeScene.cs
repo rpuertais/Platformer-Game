@@ -35,7 +35,10 @@ public class ChangeScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            ExitGame();
+        } 
     }
 
     public void AdvanceCustomLevel(int level)

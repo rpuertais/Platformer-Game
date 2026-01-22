@@ -37,7 +37,15 @@ public class ChangeScene : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape)) 
         {
-            ExitGame();
+            thislevel = SceneManager.GetActiveScene().buildIndex;
+            if (thislevel == 0)
+            {
+                ExitGame();
+            }
+            else
+            {
+                AdvanceCustomLevel(0);
+            }
         } 
     }
 

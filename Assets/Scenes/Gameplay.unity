@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'SCORE: 00'
+  m_Text: 'Score: 00'
 --- !u!222 &1105862
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 155923688}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2829,6 +2829,7 @@ GameObject:
   - component: {fileID: 966580800}
   - component: {fileID: 966580799}
   - component: {fileID: 966580798}
+  - component: {fileID: 966580801}
   m_Layer: 0
   m_Name: EndFlag
   m_TagString: Untagged
@@ -2866,7 +2867,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2957,6 +2958,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &966580801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966580797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4b5eb2a19712b4ba38981ff2626237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VictoryCheck
 --- !u!1 &1147415033
 GameObject:
   m_ObjectHideFlags: 0

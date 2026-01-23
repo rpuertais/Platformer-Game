@@ -7,53 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public bool isLoading = false;
-    public static ChangeScene instance { get; private set; }
-
-    int sceneIndex;
-    int thislevel;
-    int lastScene;
-
-    void Awake()
+    public void OnClick()
     {
-        if (instance != null)
-        {
-            instance.thislevel = SceneManager.GetActiveScene().buildIndex;
-            Destroy(gameObject);
-            return;
-        }
-
-        instance = this;
-        DontDestroyOnLoad(gameObject);
-
-        isLoading = false;
-
-        thislevel = SceneManager.GetActiveScene().buildIndex;
-        lastScene = SceneManager.sceneCountInBuildSettings;
+        SceneManager.LoadScene(1);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        thislevel = SceneManager.GetActiveScene().buildIndex;
-
-        if (Input.GetKeyDown(KeyCode.Escape) && (thislevel != 0))
-        {
-            ExitGame();
-        } 
-    }
-
-    public void AdvanceCustomLevel(int level)
-    {
-        if (!isLoading)
-        {
-            isLoading = true;
-            SceneManager.LoadScene(level);
-        }
-        isLoading = false;
-    }
-
-    public void ExitGame()
+    public void OnEscape()
     {
         Application.Quit();
         Debug.Log("Estas out del juego");

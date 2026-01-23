@@ -28,6 +28,7 @@ public class Jump : MonoBehaviour
 
     public void OnJumpStarted()
     {
+        SetGravity();
         var velocity = new Vector2(rigidbody.linearVelocity.x, GetJumpForce());
         rigidbody.linearVelocity = velocity;
         jumpStartedTime = Time.time;
@@ -66,5 +67,11 @@ public class Jump : MonoBehaviour
     private float GetJumpForce()
     {
         return 2 * JumpHeight * SpeedHorizontal / DistanceToMaxHeight;
+    }
+
+    private void SetGravity()
+    {
+        var grav = 2 * JumpHeight * (SpeedHorizontal * SpeedHorizontal) / (DistanceToMaxHeight * DistanceToMaxHeight);
+        rigidbody.gravityScale = grav / 9.81f;
     }
 }

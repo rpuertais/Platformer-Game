@@ -11,9 +11,19 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(levelValue);
     }
+
+    public void OnEnter()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            SceneManager.LoadScene(1);
+        }
+    }
+
     public void OnEscape()
     {
         Application.Quit();
         //Debug.Log("Estas out del juego");
     }
+
 }

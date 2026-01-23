@@ -462,7 +462,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1461934635}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: OnClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -791,7 +791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3975029709162392578, guid: 44a7f5b88191d004b8f01b8a5c18c3e6,
+  m_Sprite: {fileID: -4035090759407032807, guid: 5160b0697b93afb42903bc1793ab74f0,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

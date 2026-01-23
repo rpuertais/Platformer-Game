@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: acd2be2e95a075848a7f87cfeda193eb
+guid: 44a7f5b88191d004b8f01b8a5c18c3e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5871050758023779472
-    second: FreePathTitle_0
+      213: -3975029709162392578
+    second: FREEPATH RPG PRESENTATION_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FreePathTitle_0
+      name: FREEPATH RPG PRESENTATION_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1534
-        height: 861
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0949b4aee892a7150800000000000000
-      internalID: 5871050758023779472
+      spriteID: ef350c54a8bd5d8c0800000000000000
+      internalID: -3975029709162392578
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FreePathTitle_0: 5871050758023779472
+      FREEPATH RPG PRESENTATION_0: -3975029709162392578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

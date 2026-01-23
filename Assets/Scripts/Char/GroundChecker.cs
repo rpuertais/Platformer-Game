@@ -12,7 +12,7 @@ public class GroundChecker : MonoBehaviour
     //On trigger enter compare the tags and send the hit event
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log($"{transform.parent.name} collided with {collision.name} with tag {collision.tag}");
+        //Debug.Log($"{transform.parent.name} collided with {collision.name} with tag {collision.tag}");
         if (TagCompare(collision))
         {
             groundHitEvent?.Invoke();

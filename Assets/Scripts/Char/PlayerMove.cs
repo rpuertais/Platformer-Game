@@ -10,10 +10,8 @@ public class PlayerMove : MonoBehaviour
     Rigidbody2D _rigidbody;
     private float _horizontalDir; // Horizontal move direction value [-1, 1]
 
-    Jump jumpComponent;
     void Start()
     {
-        jumpComponent = GetComponent<Jump>();
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
     }
 
@@ -26,12 +24,11 @@ public class PlayerMove : MonoBehaviour
 
     }
 
-    // NOTE: InputSystem: "move" action becomes "OnMove" method
     void OnMove(InputValue value)
     {
-        // Read value from control, the type depends on what
-        // type of controls the action is bound to
         var inputVal = value.Get<Vector2>();
         _horizontalDir = inputVal.x;
     }
+
+
 }

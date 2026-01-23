@@ -30,7 +30,7 @@ public class GroundChecker : MonoBehaviour
     //On trigger exit compare the tags and send the NO hit event
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log($"{transform.parent.name} exited collision with {collision.name} with tag {collision.tag}");
+        //Debug.Log($"{transform.parent.name} exited collision with {collision.name} with tag {collision.tag}");
         if (TagCompare(collision))
         {
             groundNoHitEvent?.Invoke();

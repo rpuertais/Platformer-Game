@@ -17,6 +17,18 @@ public class Jump : MonoBehaviour
 
     private float lastVelocityY;
 
+
+    private void OnEnable()
+    {
+        PowerUp.OnPowerCollected += UpdateJump;
+    }
+
+    private void OnDisable()
+    {
+        PowerUp.OnPowerCollected -= UpdateJump;
+    }
+
+
     void Start()
     {
         rigidbody = gameObject.GetComponent<Rigidbody2D>();
@@ -86,5 +98,10 @@ public class Jump : MonoBehaviour
     {
         var grav = 2 * JumpHeight * (SpeedHorizontal * SpeedHorizontal) / (DistanceToMaxHeight * DistanceToMaxHeight);
         rigidbody.gravityScale = grav / 9.81f;
+    }
+
+    private void UpdateJump(PowerUp powerUp)
+    {
+        JumpHeight += powerUp.jumpValue;
     }
 }

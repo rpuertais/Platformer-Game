@@ -10,13 +10,10 @@ public class ChangeScene : MonoBehaviour
     public void OnClick(int levelValue)
     {
         SceneManager.LoadScene(levelValue);
-        
     }
-
     public void OnEscape()
     {
         Application.Quit();
         //Debug.Log("Estas out del juego");
     }
-
 }

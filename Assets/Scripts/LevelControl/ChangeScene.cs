@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public void OnClick()
+    public void OnClick(int levelValue)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(levelValue);
+        
     }
 
     public void OnEscape()

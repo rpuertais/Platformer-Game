@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 1105860}
   - component: {fileID: 1105862}
   - component: {fileID: 1105861}
+  - component: {fileID: 1105863}
   m_Layer: 5
   m_Name: TextScore
   m_TagString: Untagged
@@ -198,6 +199,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105859}
   m_CullTransparentMesh: 1
+--- !u!114 &1105863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea620a54dcf16524c9aac4eac6bdecdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreText
 --- !u!1 &7968182
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +223,7 @@ GameObject:
   - component: {fileID: 7968185}
   - component: {fileID: 7968184}
   - component: {fileID: 7968186}
+  - component: {fileID: 7968187}
   m_Layer: 0
   m_Name: SilverCoin
   m_TagString: Untagged
@@ -360,6 +374,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7968187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41313a66414dbbf428da03039d8a1e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coin
+  Value: 20
 --- !u!1 &88513766
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +399,7 @@ GameObject:
   - component: {fileID: 88513770}
   - component: {fileID: 88513769}
   - component: {fileID: 88513768}
+  - component: {fileID: 88513771}
   m_Layer: 0
   m_Name: GoldCoin
   m_TagString: Untagged
@@ -522,6 +550,19 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &88513771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88513766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41313a66414dbbf428da03039d8a1e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coin
+  Value: 100
 --- !u!1 &125534308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2916,6 +2957,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1147415033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147415035}
+  - component: {fileID: 1147415034}
+  m_Layer: 0
+  m_Name: ScoreSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1147415034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147415033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a75e657bdcc7d4e95d560c49f595e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  Score: 0
+--- !u!4 &1147415035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147415033}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1171093568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,7 +3082,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1171093572
 RectTransform:
@@ -3030,6 +3116,7 @@ GameObject:
   - component: {fileID: 1509888664}
   - component: {fileID: 1509888663}
   - component: {fileID: 1509888665}
+  - component: {fileID: 1509888666}
   m_Layer: 0
   m_Name: BronzeCoin
   m_TagString: Untagged
@@ -3180,6 +3267,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1509888666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509888661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41313a66414dbbf428da03039d8a1e22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Coin
+  Value: 5
 --- !u!1 &1537617904
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,13 +4388,14 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 1171093572}
   - {fileID: 237608556}
   - {fileID: 155923685}
+  - {fileID: 1933732877}
+  - {fileID: 1147415035}
   - {fileID: 496144590}
   - {fileID: 1821473471}
   - {fileID: 1740967021}
   - {fileID: 2049165328}
-  - {fileID: 1171093572}
   - {fileID: 1791952462}
   - {fileID: 966580800}
-  - {fileID: 1933732877}

@@ -1990,6 +1990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4b5eb2a19712b4ba38981ff2626237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VictoryCheck
+  scoreSystem: {fileID: 1147415034}
 --- !u!1 &1001578037
 GameObject:
   m_ObjectHideFlags: 0

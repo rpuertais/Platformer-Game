@@ -56,6 +56,7 @@ public class Jump : MonoBehaviour
         rb.linearVelocity = velocity;
         jumpStartedTime = Time.time;
 
+        GetComponent<PlayerAudio>().PlayJump();
     }
 
     public void OnJumpFinished()

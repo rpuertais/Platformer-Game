@@ -1,16 +1,21 @@
 using System;
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class CoinTrigger : MonoBehaviour
 {
     public int Value = 5;
 
-    public static Action<Coin> OnCoinCollected;
+    public static Action<CoinTrigger> OnCoinCollected;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        OnCoinCollected?.Invoke(this);
+        if (other.CompareTag("Player"))
+        {
+            other.GetComponent<PlayerAudio>().PlayCoin();
 
-        Destroy(gameObject);
+            OnCoinCollected?.Invoke(this);
+
+            Destroy(gameObject);
+        }
     }
 }

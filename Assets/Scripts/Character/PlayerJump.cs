@@ -97,4 +97,14 @@ public class Jump : MonoBehaviour
     {
         JumpHeight += powerUp.jumpValue;
     }
+    public void GroundHitCallBack()
+    {
+        grounded = true;
+        jumpCount = 0;
+    }
+
+    public void GroundNoHitCallBack()
+    {
+        grounded = false;
+    }
 }

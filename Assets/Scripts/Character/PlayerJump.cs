@@ -45,9 +45,13 @@ public class Jump : MonoBehaviour
         {
             return;
         }
-        if (grounded) 
-        { 
-            jumpCount = 0; 
+        if (grounded)
+        {
+            jumpCount = 0;
+        }
+        else
+        {
+
         }
         grounded = false;
         jumpCount++;
@@ -63,18 +67,6 @@ public class Jump : MonoBehaviour
     {
         float fractionOfTimePressed = 1 / Mathf.Clamp01((Time.time - jumpStartedTime) / PressTimeToMaxJump);
         rb.gravityScale *= fractionOfTimePressed;
-    }
-
-    
-    public void GroundHitCallBack()
-    {
-        grounded = true;
-        jumpCount = 0;
-    }
-
-    public void GroundNoHitCallBack()
-    {
-        grounded = false;
     }
 
     private void TweakGravity()

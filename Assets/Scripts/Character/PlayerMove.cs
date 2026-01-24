@@ -5,23 +5,24 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField]
     private float Speed = 5.0f;
-    //private float salto = 100;
 
-    Rigidbody2D _rigidbody;
+    Rigidbody2D rb;
     private float _horizontalDir; // Horizontal move direction value [-1, 1]
+    private Animator animator;
 
     void Start()
     {
-        _rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
     {
-        Vector2 velocity = _rigidbody.linearVelocity;
+        Vector2 velocity = rb.linearVelocity;
         velocity.x = _horizontalDir * Speed;
-        _rigidbody.linearVelocity = velocity;
+        rb.linearVelocity = velocity;
 
-
+        animator.SetFloat("XVelocity", Mathf.Abs(velocity.x));   
     }
 
     void OnMove(InputValue value)

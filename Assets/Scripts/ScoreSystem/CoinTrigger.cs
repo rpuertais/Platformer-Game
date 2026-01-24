@@ -9,8 +9,6 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Call any method subscrived to the event
-        //SendMessage("OnCoinCollected", this);
         OnCoinCollected?.Invoke(this);
 
         Destroy(gameObject);

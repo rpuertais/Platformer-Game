@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
 
     public bool grounded = false;
     public bool shouldJump = false;
@@ -31,7 +31,7 @@ public class Jump : MonoBehaviour
 
     void Start()
     {
-        rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
@@ -52,8 +52,8 @@ public class Jump : MonoBehaviour
         grounded = false;
         jumpCount++;
         SetGravity();
-        var velocity = new Vector2(rigidbody.linearVelocity.x, GetJumpForce());
-        rigidbody.linearVelocity = velocity;
+        var velocity = new Vector2(rb.linearVelocity.x, GetJumpForce());
+        rb.linearVelocity = velocity;
         jumpStartedTime = Time.time;
 
     }
@@ -61,7 +61,7 @@ public class Jump : MonoBehaviour
     public void OnJumpFinished()
     {
         float fractionOfTimePressed = 1 / Mathf.Clamp01((Time.time - jumpStartedTime) / PressTimeToMaxJump);
-        rigidbody.gravityScale *= fractionOfTimePressed;
+        rb.gravityScale *= fractionOfTimePressed;
     }
 
     
@@ -78,13 +78,13 @@ public class Jump : MonoBehaviour
 
     private void TweakGravity()
     {
-        rigidbody.gravityScale *= 1.2f;
+        rb.gravityScale *= 1.2f;
     }
 
     private bool IsPeakReached()
     {
-        bool reached = ((lastVelocityY * rigidbody.linearVelocity.y) < 0);
-        lastVelocityY = rigidbody.linearVelocity.y;
+        bool reached = ((lastVelocityY * rb.linearVelocity.y) < 0);
+        lastVelocityY = rb.linearVelocity.y;
 
         return reached;
     }
@@ -97,7 +97,7 @@ public class Jump : MonoBehaviour
     private void SetGravity()
     {
         var grav = 2 * JumpHeight * (SpeedHorizontal * SpeedHorizontal) / (DistanceToMaxHeight * DistanceToMaxHeight);
-        rigidbody.gravityScale = grav / 9.81f;
+        rb.gravityScale = grav / 9.81f;
     }
 
     private void UpdateJump(PowerUp powerUp)

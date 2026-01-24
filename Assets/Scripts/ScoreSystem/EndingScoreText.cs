@@ -8,6 +8,6 @@ public class EndingScoreText : MonoBehaviour
     void Start()
     {
         int finalScore = PlayerPrefs.GetInt("FinalScore", 0);
-        scoreText.text = "Puntuació final: " + finalScore;
+        scoreText.text = "Final Score: " + finalScore;
     }
 }

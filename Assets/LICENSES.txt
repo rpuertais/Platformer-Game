@@ -38,8 +38,8 @@
 
 	DaFont
 
-	Font: Cocogoose Pro Family by Zetafonts – http://www.zetafonts.com/collection/308
-	Llicència: Creative Commons Attribution – Non Commercial (CC BY-NC)
+	Font: Nexa Heavy by Fontfabric – https://www.fontfabric.com/fonts/nexa/
+	Llicència: Ús personal. No apte per a ús comercial.
 
 --------------------------------------------------------------------------------------------------------
 

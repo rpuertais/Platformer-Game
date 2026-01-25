@@ -16,6 +16,7 @@ public class Jump : MonoBehaviour
     private float jumpStartedTime;
 
     private float lastVelocityY;
+    private Animator animator;
 
 
     private void OnEnable()
@@ -32,6 +33,7 @@ public class Jump : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -49,10 +51,8 @@ public class Jump : MonoBehaviour
         {
             jumpCount = 0;
         }
-        else
-        {
 
-        }
+
         grounded = false;
         jumpCount++;
         SetGravity();
@@ -101,10 +101,12 @@ public class Jump : MonoBehaviour
     {
         grounded = true;
         jumpCount = 0;
+        animator.SetBool("IsJumping", false);
     }
 
     public void GroundNoHitCallBack()
     {
         grounded = false;
+        animator.SetBool("IsJumping", true);
     }
 }

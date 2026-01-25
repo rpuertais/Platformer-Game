@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dfa6184ab9667c7409f3ed8b3595f10d
+guid: 73e51a860ad3517498531d2591c0e475
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - CocogooseProTrial
+  - Nexa
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

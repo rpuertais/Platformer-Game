@@ -569,8 +569,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Press ENTER to start or Press the button Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ff2a89d2e5210734c8417de6ca714569, type: 2}
-  m_sharedMaterial: {fileID: 2179168946961761200, guid: ff2a89d2e5210734c8417de6ca714569,
+  m_fontAsset: {fileID: 11400000, guid: 9790b95816dbcc343a205005a093e06f, type: 2}
+  m_sharedMaterial: {fileID: -5167458522904804372, guid: 9790b95816dbcc343a205005a093e06f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -34.28827, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

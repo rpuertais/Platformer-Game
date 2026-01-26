@@ -56,6 +56,6 @@
 
 --------------------------------------------------------------------------------------------------------
 
-Música: Free – Casual & Relaxing Game Music Pack by SLD Audio  
-Disponible a la Unity Asset Store: https://assetstore.unity.com/packages/audio/music/free-casual-relaxing-game-music-pack-262740
-Llicència: Standard Unity Asset Store EULA. Ús comercial permès dins de projectes. Redistribució prohibida.
+	Música: Free – Casual & Relaxing Game Music Pack by SLD Audio  
+	Disponible a la Unity Asset Store: https://assetstore.unity.com/packages/audio/music/free-casual-relaxing-game-music-pack-262740
+	Llicència: Standard Unity Asset Store EULA. Ús comercial permès dins de projectes. Redistribució prohibida.

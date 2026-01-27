@@ -3,11 +3,11 @@ using TMPro;
 
 public class EndingScoreText : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI ScoreText;
 
     void Start()
     {
         int finalScore = PlayerPrefs.GetInt("FinalScore", 0);
-        scoreText.text = "Final Score: " + finalScore;
+        ScoreText.text = "Final Score: " + finalScore;
     }
 }

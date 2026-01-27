@@ -3,19 +3,16 @@ using UnityEngine.Events;
 
 public class GroundChecker : MonoBehaviour
 {
-    public UnityEvent groundHitEvent;
-    public UnityEvent groundNoHitEvent;
+    public UnityEvent GroundHitEvent;
+    public UnityEvent GroundNoHitEvent;
 
-    //String array to know what tags are grounderable
-    public string[] collidableTags;
+    public string[] CollidableTags;
 
-    //On trigger enter compare the tags and send the hit event
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log($"{transform.parent.name} collided with {collision.name} with tag {collision.tag}");
         if (TagCompare(collision))
         {
-            groundHitEvent?.Invoke();
+            GroundHitEvent?.Invoke();
         }
     }
 
@@ -23,24 +20,21 @@ public class GroundChecker : MonoBehaviour
     {
         if (TagCompare(collision))
         {
-            groundHitEvent?.Invoke();
+            GroundHitEvent?.Invoke();
         }
     }
 
-    //On trigger exit compare the tags and send the NO hit event
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //Debug.Log($"{transform.parent.name} exited collision with {collision.name} with tag {collision.tag}");
         if (TagCompare(collision))
         {
-            groundNoHitEvent?.Invoke();
+            GroundNoHitEvent?.Invoke();
         }
     }
 
-    //Only compare tags
     private bool TagCompare(Collider2D collision)
     {
-        foreach (string tag in collidableTags)
+        foreach (string tag in CollidableTags)
         {
             if (collision.CompareTag(tag))
             {

@@ -3393,8 +3393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea4751ebc69594b9269faa3100d81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAudio
-  jumpSound: {fileID: 8300000, guid: 7cc057bed53baf34799f52aab3c84800, type: 3}
-  coinSound: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  jumpSound: {fileID: 8300000, guid: 581d445061b11f7439c0184e29c5fb3e, type: 3}
+  coinSound: {fileID: 8300000, guid: b4219aa2901827e4d916980792b9cbfb, type: 3}
 --- !u!82 &155923691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15056,7 +15056,7 @@ GameObject:
   - component: {fileID: 1026854569}
   - component: {fileID: 1026854568}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: AudioBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15073,7 +15073,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 458dd8822518c4f37bc3edba9b6c57d9, type: 3}
+  m_Resource: {fileID: 8300000, guid: de2905ac5b972194f8aeede2e484b4f1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.02
   m_Pitch: 1

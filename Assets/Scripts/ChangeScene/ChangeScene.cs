@@ -23,5 +23,7 @@ public class ChangeScene : MonoBehaviour
     public void OnEscape()
     {
         Application.Quit();
+        //Debug.Log("Estas out del juego");
     }
+
 }

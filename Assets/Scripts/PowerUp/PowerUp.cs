@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    public float JumpValue;
-
+    public float jumpValue;
     public static Action<PowerUp> OnPowerCollected;
 
     private void OnTriggerEnter2D(Collider2D collision)

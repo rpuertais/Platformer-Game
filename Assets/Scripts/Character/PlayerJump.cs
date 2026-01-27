@@ -4,21 +4,20 @@ public class Jump : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    public bool Grounded = false;
-    public bool ShouldJump = false;
+    public bool grounded = false;
+    public bool shouldJump = false;
 
     public float JumpHeight;
     public float DistanceToMaxHeight;
     public float SpeedHorizontal;
     public float PressTimeToMaxJump;
-
-    public int JumpCount = 0;
-    public int MaxJumps = 2;
-
+    public int jumpCount = 0;
+    public int maxJumps = 2;
     private float jumpStartedTime;
-    private float lastVelocityY;
 
+    private float lastVelocityY;
     private Animator animator;
+
 
     private void OnEnable()
     {
@@ -29,6 +28,7 @@ public class Jump : MonoBehaviour
     {
         PowerUp.OnPowerCollected -= UpdateJump;
     }
+
 
     void Start()
     {
@@ -43,20 +43,23 @@ public class Jump : MonoBehaviour
 
     public void OnJumpStarted()
     {
-        if (JumpCount >= MaxJumps)
+        if (jumpCount >= maxJumps)
         {
             return;
         }
-        if (Grounded)
+        if (grounded)
         {
-            JumpCount = 0;
+            jumpCount = 0;
         }
-        Grounded = false;
-        JumpCount++;
+
+
+        grounded = false;
+        jumpCount++;
         SetGravity();
         var velocity = new Vector2(rb.linearVelocity.x, GetJumpForce());
         rb.linearVelocity = velocity;
         jumpStartedTime = Time.time;
+
         GetComponent<PlayerAudio>().PlayJump();
     }
 
@@ -75,6 +78,7 @@ public class Jump : MonoBehaviour
     {
         bool reached = ((lastVelocityY * rb.linearVelocity.y) < 0);
         lastVelocityY = rb.linearVelocity.y;
+
         return reached;
     }
 
@@ -91,18 +95,18 @@ public class Jump : MonoBehaviour
 
     private void UpdateJump(PowerUp powerUp)
     {
-        JumpHeight += powerUp.JumpValue;
+        JumpHeight += powerUp.jumpValue;
     }
     public void GroundHitCallBack()
     {
-        Grounded = true;
-        JumpCount = 0;
+        grounded = true;
+        jumpCount = 0;
         animator.SetBool("IsJumping", false);
     }
 
     public void GroundNoHitCallBack()
     {
-        Grounded = false;
+        grounded = false;
         animator.SetBool("IsJumping", true);
     }
 }

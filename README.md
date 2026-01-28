@@ -1,16 +1,16 @@
-## Delivery 01 - $(PlatformerGame)
+## Delivery 01 - (Freepath PlatformerGame)
 
-![$(Game Title)](Screenshots/screenshot01.png "$(Game Title)")
+![$(FreePath)](Screenshots/screenshot01.png "$(FreePath)")
 
 ### Description
 
-$(Your Game Description)
+$(Collect coins and jump between platforms to complete the level)
 
 ### Features
 
- - $(Game Feature 01)
- - $(Game Feature 02)
- - $(Game Feature 03)
+ - $(Collect coins to get a high score)
+ - $(You can collect a jump power-up to jump even higher!)
+ - $(Overcome all the obstacles and grab the flag to win the game)
 
 ### Controls
 

@@ -3,22 +3,22 @@
 ![image alt](https://github.com/rpuertais/Platformer-Game/blob/cb638d50daedff64b5f5857688c50420b84cfd6e/Screenshots/FreepathMainMenu.jpg)
 ### Description
 
-$(Collect coins and jump between platforms to complete the level and get the best highscore)
+(Collect coins and jump between platforms to complete the level and get the best highscore)
 
 ### Features
 
- - $(Collect coins to get a high score)
- - $(You can collect a jump power-up to jump even higher!)
- - $(Overcome all the obstacles and grab the flag to win the game)
+ - (Collect coins to get a high score)
+ - (You can collect a jump power-up to jump even higher!)
+ - (Overcome all the obstacles and grab the flag to win the game)
 
 ### Controls
 
 Keyboard:
- - $(A to move left)
- - $(D to move right)
- - $(W or spacebar to jump)
- - $(Esc to exit the game)
- - $(Enter in the Menu to Play)
+ - (A to move left)
+ - (D to move right)
+ - (W or spacebar to jump)
+ - (Esc to exit the game)
+ - (Enter in the Menu to Play)
 
 ### Screenshots
 
@@ -26,10 +26,10 @@ Keyboard:
 
 ### Developers
 
- - $(Roger Puerta) - $(Lead Developer)
- - $(Eloy Gutierrez) - $(Lead Designer)
- - $(Joan Garcia) - $(Junior Developer)
- - $(Dani Navarro) - $(Intern Developer)
+ - (Roger Puerta) - (Lead Developer)
+ - (Eloy Gutierrez) - (Lead Designer)
+ - (Joan Garcia) - (Junior Developer)
+ - (Dani Navarro) - (Intern Developer)
 
 ### License
 

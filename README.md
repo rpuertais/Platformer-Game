@@ -21,8 +21,6 @@ Keyboard:
  - $(Esc to exit the game)
  - $(Enter in the Menu to Play)
 
-
-
 ### Screenshots
 
 _TODO: Show your game to the world, animated GIFs recommended!._
@@ -33,12 +31,6 @@ _TODO: Show your game to the world, animated GIFs recommended!._
  - $(Eloy Gutierrez) - $(Role/Tasks Developed)
  - $(Joan Garcia) - $(Role/Tasks Developed)
  - $(Dani Navarro) - $(Role/Tasks Developed)
-
-### Links
-
- - YouTube Gameplay: $(YouTube Link)
- - itch.io Release: $(itch.io Game Page)
- - Steam Release: $(Steam Game Page)
 
 ### License
 

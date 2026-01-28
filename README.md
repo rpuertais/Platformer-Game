@@ -38,4 +38,4 @@ This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for f
 
 $(Additional Licenses)
 
-*Copyright (c) $(2026) $(Roger Puerta, Eloy Gutierrez, Joan Garcia, Dani Navarro)*
+*Personal Use Licence – Free Game   This game is distributed free of charge for personal and educational use. Its sale, redistribution, modification or commercial use is not permitted without the express authorisation of the author. The author accepts no liability for any damage arising from the use of this game. All rights to the visual, audio and code content belong to their respective creators. © [Roger Puerta, Eloy Gutierrez, Joan Garcia, Dani Navarro], [2026]*

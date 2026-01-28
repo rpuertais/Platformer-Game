@@ -12,9 +12,7 @@ public class CoinTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<PlayerAudio>().PlayCoin();
-
             OnCoinCollected?.Invoke(this);
-
             Destroy(gameObject);
         }
     }

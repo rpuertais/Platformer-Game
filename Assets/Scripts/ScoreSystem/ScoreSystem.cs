@@ -20,7 +20,6 @@ public class ScoreSystem : MonoBehaviour
     private void UpdateScore(CoinTrigger coin)
     {
         Score += coin.Value;
-
         OnScoreUpdated?.Invoke(Score);
     }
 }

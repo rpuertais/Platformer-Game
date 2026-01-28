@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class PlayerAudio : MonoBehaviour
 {
-
-    public AudioClip jumpSound;
-    public AudioClip coinSound;
+    public AudioClip JumpSound;
+    public AudioClip CoinSound;
 
     private AudioSource audioSource;
 
@@ -15,12 +14,12 @@ public class PlayerAudio : MonoBehaviour
 
     public void PlayJump()
     {
-        audioSource.PlayOneShot(jumpSound);
+        audioSource.PlayOneShot(JumpSound);
     }
 
     public void PlayCoin()
     {
-        audioSource.PlayOneShot(coinSound);
+        audioSource.PlayOneShot(CoinSound);
     }
 }
 

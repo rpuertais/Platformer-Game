@@ -20,7 +20,6 @@ public class PlayerJump : MonoBehaviour
 
     private Animator animator;
 
-
     private void OnEnable()
     {
         PowerUp.OnPowerCollected += UpdateJump;
@@ -30,7 +29,6 @@ public class PlayerJump : MonoBehaviour
     {
         PowerUp.OnPowerCollected -= UpdateJump;
     }
-
 
     void Start()
     {
@@ -54,14 +52,12 @@ public class PlayerJump : MonoBehaviour
             JumpCount = 0;
         }
 
-
         Grounded = false;
         JumpCount++;
         SetGravity();
         var velocity = new Vector2(rb.linearVelocity.x, GetJumpForce());
         rb.linearVelocity = velocity;
         jumpStartedTime = Time.time;
-
         GetComponent<PlayerAudio>().PlayJump();
     }
 
@@ -97,7 +93,7 @@ public class PlayerJump : MonoBehaviour
 
     private void UpdateJump(PowerUp powerUp)
     {
-        JumpHeight += powerUp.jumpValue;
+        JumpHeight += powerUp.JumpValue;
     }
     public void GroundHitCallBack()
     {

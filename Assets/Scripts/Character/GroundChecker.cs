@@ -3,16 +3,16 @@ using UnityEngine.Events;
 
 public class GroundChecker : MonoBehaviour
 {
-    public UnityEvent groundHitEvent;
-    public UnityEvent groundNoHitEvent;
+    public UnityEvent GroundHitEvent;
+    public UnityEvent GroundNoHitEvent;
 
-    public string[] collidableTags;
+    public string[] CollidableTags;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (TagCompare(collision))
         {
-            groundHitEvent?.Invoke();
+            GroundHitEvent?.Invoke();
         }
     }
 
@@ -20,7 +20,7 @@ public class GroundChecker : MonoBehaviour
     {
         if (TagCompare(collision))
         {
-            groundHitEvent?.Invoke();
+            GroundHitEvent?.Invoke();
         }
     }
 
@@ -28,13 +28,13 @@ public class GroundChecker : MonoBehaviour
     {
         if (TagCompare(collision))
         {
-            groundNoHitEvent?.Invoke();
+            GroundNoHitEvent?.Invoke();
         }
     }
 
     private bool TagCompare(Collider2D collision)
     {
-        foreach (string tag in collidableTags)
+        foreach (string tag in CollidableTags)
         {
             if (collision.CompareTag(tag))
             {

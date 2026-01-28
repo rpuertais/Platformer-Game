@@ -3342,14 +3342,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff11416ab29152942ba8a1d206538be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Jump
-  grounded: 0
-  shouldJump: 0
+  Grounded: 0
+  ShouldJump: 0
   JumpHeight: 3
   DistanceToMaxHeight: 1
   SpeedHorizontal: 2
   PressTimeToMaxJump: 0.5
-  jumpCount: 0
-  maxJumps: 2
+  JumpCount: 0
+  MaxJumps: 2
 --- !u!114 &155923689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3393,8 +3393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea4751ebc69594b9269faa3100d81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAudio
-  jumpSound: {fileID: 8300000, guid: 581d445061b11f7439c0184e29c5fb3e, type: 3}
-  coinSound: {fileID: 8300000, guid: b4219aa2901827e4d916980792b9cbfb, type: 3}
+  JumpSound: {fileID: 8300000, guid: 581d445061b11f7439c0184e29c5fb3e, type: 3}
+  CoinSound: {fileID: 8300000, guid: b4219aa2901827e4d916980792b9cbfb, type: 3}
 --- !u!82 &155923691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9326,8 +9326,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeea963687d7db4e8a0a948623f2645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CamFollower
-  camFollower: {fileID: 2084644739}
-  speed: 0.07
+  CamFollow: {fileID: 2084644739}
+  Speed: 0.07
 --- !u!1 &533158978
 GameObject:
   m_ObjectHideFlags: 0
@@ -26846,7 +26846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88dfa3d308da9934390a71ea1172ca1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
-  jumpValue: 2
+  JumpValue: 0
 --- !u!95 &1821473473
 Animator:
   serializedVersion: 7
@@ -28765,11 +28765,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0896bc24590bd04f9ed8b3801537ce0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundChecker
-  groundHitEvent:
+  GroundHitEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 155923688}
-        m_TargetAssemblyTypeName: Jump, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayerJump, Assembly-CSharp
         m_MethodName: GroundHitCallBack
         m_Mode: 1
         m_Arguments:
@@ -28780,11 +28780,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  groundNoHitEvent:
+  GroundNoHitEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 155923688}
-        m_TargetAssemblyTypeName: Jump, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayerJump, Assembly-CSharp
         m_MethodName: GroundNoHitCallBack
         m_Mode: 1
         m_Arguments:
@@ -28795,7 +28795,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  collidableTags:
+  CollidableTags:
   - Floor
 --- !u!58 &1918508238
 CircleCollider2D:
@@ -29869,7 +29869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c4b5eb2a19712b4ba38981ff2626237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VictoryCheck
-  scoreSystem: {fileID: 1147415034}
+  ScoreSystem: {fileID: 0}
 --- !u!61 &1964095381
 BoxCollider2D:
   m_ObjectHideFlags: 0

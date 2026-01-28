@@ -4,7 +4,7 @@
 
 ### Description
 
-$(Collect coins and jump between platforms to complete the level)
+$(Collect coins and jump between platforms to complete the level and get the best highscore)
 
 ### Features
 

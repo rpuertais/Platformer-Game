@@ -1,21 +1,23 @@
 using UnityEngine;
 
-public class Jump : MonoBehaviour
+public class PlayerJump : MonoBehaviour
 {
     private Rigidbody2D rb;
 
-    public bool grounded = false;
-    public bool shouldJump = false;
+    public bool Grounded = false;
+    public bool ShouldJump = false;
 
     public float JumpHeight;
     public float DistanceToMaxHeight;
     public float SpeedHorizontal;
     public float PressTimeToMaxJump;
-    public int jumpCount = 0;
-    public int maxJumps = 2;
-    private float jumpStartedTime;
 
+    public int JumpCount = 0;
+    public int MaxJumps = 2;
+
+    private float jumpStartedTime;
     private float lastVelocityY;
+
     private Animator animator;
 
 
@@ -43,18 +45,18 @@ public class Jump : MonoBehaviour
 
     public void OnJumpStarted()
     {
-        if (jumpCount >= maxJumps)
+        if (JumpCount >= MaxJumps)
         {
             return;
         }
-        if (grounded)
+        if (Grounded)
         {
-            jumpCount = 0;
+            JumpCount = 0;
         }
 
 
-        grounded = false;
-        jumpCount++;
+        Grounded = false;
+        JumpCount++;
         SetGravity();
         var velocity = new Vector2(rb.linearVelocity.x, GetJumpForce());
         rb.linearVelocity = velocity;
@@ -99,14 +101,14 @@ public class Jump : MonoBehaviour
     }
     public void GroundHitCallBack()
     {
-        grounded = true;
-        jumpCount = 0;
+        Grounded = true;
+        JumpCount = 0;
         animator.SetBool("IsJumping", false);
     }
 
     public void GroundNoHitCallBack()
     {
-        grounded = false;
+        Grounded = false;
         animator.SetBool("IsJumping", true);
     }
 }

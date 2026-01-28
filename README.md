@@ -23,7 +23,7 @@ Keyboard:
 
 ### Screenshots
 
-_TODO: Show your game to the world, animated GIFs recommended!._
+![image alt](https://github.com/rpuertais/Platformer-Game/blob/cf598a9ae9a2a65ecc14661d74510a7c59ce7b67/Screenshots/ScreenShotGameplay.png)
 
 ### Developers
 

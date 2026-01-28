@@ -29,7 +29,7 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
 ### Developers
 
- - $(Roger Puerta) - $(Role/Tasks Developed)
+ - $(Roger Puerta) - $(Main Developer/)
  - $(Eloy Gutierrez) - $(Role/Tasks Developed)
  - $(Joan Garcia) - $(Role/Tasks Developed)
  - $(Dani Navarro) - $(Role/Tasks Developed)

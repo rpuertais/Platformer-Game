@@ -1,4 +1,4 @@
-## Delivery 01 - $(Game Title)
+## Delivery 01 - $(PlatformerGame)
 
 ![$(Game Title)](Screenshots/screenshot01.png "$(Game Title)")
 
@@ -15,9 +15,13 @@ $(Your Game Description)
 ### Controls
 
 Keyboard:
- - $(Game Control 01)
- - $(Game Control 02)
- - $(Game Control 03)
+ - $(A to move left)
+ - $(D to move right)
+ - $(W or spacebar to jump)
+ - $(Esc to exit the game)
+ - $(Enter in the Menu to Play)
+
+
 
 ### Screenshots
 
@@ -25,9 +29,10 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
 ### Developers
 
- - $(Developer 01) - $(Role/Tasks Developed)
- - $(Developer 02) - $(Role/Tasks Developed)
- - $(Developer 03) - $(Role/Tasks Developed)
+ - $(Roger Puerta) - $(Role/Tasks Developed)
+ - $(Eloy Gutierrez) - $(Role/Tasks Developed)
+ - $(Joan Garcia) - $(Role/Tasks Developed)
+ - $(Dani Navarro) - $(Role/Tasks Developed)
 
 ### Links
 
@@ -41,4 +46,4 @@ This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for f
 
 $(Additional Licenses)
 
-*Copyright (c) $(Year) $(Developers Names)*
+*Copyright (c) $(2026) $(Roger Puerta, Eloy Gutierrez, Joan Garcia, Dani Navarro)*

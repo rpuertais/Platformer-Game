@@ -1,7 +1,6 @@
 ## Delivery 01 - (Freepath PlatformerGame)
 
-![$(FreePath)](Screenshots/screenshot01.png "$(FreePath)")
-
+![image alt](https://github.com/rpuertais/Platformer-Game/blob/cb638d50daedff64b5f5857688c50420b84cfd6e/Screenshots/FreepathMainMenu.jpg)
 ### Description
 
 $(Collect coins and jump between platforms to complete the level and get the best highscore)

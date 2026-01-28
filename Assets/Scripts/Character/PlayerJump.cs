@@ -51,7 +51,6 @@ public class PlayerJump : MonoBehaviour
         {
             JumpCount = 0;
         }
-
         Grounded = false;
         JumpCount++;
         SetGravity();
@@ -76,7 +75,6 @@ public class PlayerJump : MonoBehaviour
     {
         bool reached = ((lastVelocityY * rb.linearVelocity.y) < 0);
         lastVelocityY = rb.linearVelocity.y;
-
         return reached;
     }
 
@@ -84,13 +82,11 @@ public class PlayerJump : MonoBehaviour
     {
         return 2 * JumpHeight * SpeedHorizontal / DistanceToMaxHeight;
     }
-
     private void SetGravity()
     {
         var grav = 2 * JumpHeight * (SpeedHorizontal * SpeedHorizontal) / (DistanceToMaxHeight * DistanceToMaxHeight);
         rb.gravityScale = grav / 9.81f;
     }
-
     private void UpdateJump(PowerUp powerUp)
     {
         JumpHeight += powerUp.JumpValue;
@@ -101,7 +97,6 @@ public class PlayerJump : MonoBehaviour
         JumpCount = 0;
         animator.SetBool("IsJumping", false);
     }
-
     public void GroundNoHitCallBack()
     {
         Grounded = false;

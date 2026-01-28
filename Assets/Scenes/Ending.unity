@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa01074405dd0d34ba22663006b86f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EndingScoreText
-  ScoreText: {fileID: 0}
+  ScoreText: {fileID: 1589936188}
 --- !u!4 &1092764454
 Transform:
   m_ObjectHideFlags: 0
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 94.90917, w: 0}
+  m_margin: {x: 0, y: 0, z: -3.2296221, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

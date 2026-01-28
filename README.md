@@ -26,10 +26,10 @@ Keyboard:
 
 ### Developers
 
- - $(Roger Puerta) - $(Main Developer/)
- - $(Eloy Gutierrez) - $(Role/Tasks Developed)
- - $(Joan Garcia) - $(Role/Tasks Developed)
- - $(Dani Navarro) - $(Role/Tasks Developed)
+ - $(Roger Puerta) - $(Lead Developer)
+ - $(Eloy Gutierrez) - $(Lead Designer)
+ - $(Joan Garcia) - $(Junior Developer)
+ - $(Dani Navarro) - $(Intern Developer)
 
 ### License
 

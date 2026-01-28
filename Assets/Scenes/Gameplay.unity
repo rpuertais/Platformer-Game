@@ -767,7 +767,7 @@ SpriteRenderer:
   m_Size: {x: 0.4, y: 0.42}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!95 &7968186
 Animator:
@@ -2988,7 +2988,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2758455068094552871, guid: 19d5b75b4b105194496613e8357871b7,
+  m_Sprite: {fileID: -3354929697968415147, guid: 0cba09c6c2b9a8f4b99ce5a9a6f759b9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -35035,8 +35035,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1786331750496382236, guid: 3f4ceccdde0c8534ba1b5a0deaf559d3,
-    type: 3}
+  m_Sprite: {fileID: 497027269284114030, guid: 505f554eb3a250b428a25d239e254f7d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

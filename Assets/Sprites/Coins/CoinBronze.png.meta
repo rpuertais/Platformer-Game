@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1690b8d6f92c4274bb28e208db02e7e7
+guid: 505f554eb3a250b428a25d239e254f7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 301624341205816345
-    second: coin_silver_side_0
+      213: 497027269284114030
+    second: CoinBronze_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,29 +96,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coin_silver_side_0
+      name: CoinBronze_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 12
         y: 11
-        width: 18
+        width: 40
         height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9141f218db59f2400800000000000000
-      internalID: 301624341205816345
+      spriteID: e6eac550babc5e600800000000000000
+      internalID: 497027269284114030
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coin_silver_side_0: 301624341205816345
+      CoinBronze_0: 497027269284114030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

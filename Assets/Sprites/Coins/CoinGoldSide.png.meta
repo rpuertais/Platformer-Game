@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a664fb2b8c798c84a99b28faed0beeda
+guid: 2cde95f13d8565f47af92805ff384aca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6891147310035377761
-    second: coin_gold_side_0
+      213: 9049029747855330545
+    second: CoinGoldSide_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coin_gold_side_0
+      name: CoinGoldSide_0
       rect:
         serializedVersion: 2
         x: 23
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 16e1c85b7f542af50800000000000000
-      internalID: 6891147310035377761
+      spriteID: 1fc0cd2ac9c949d70800000000000000
+      internalID: 9049029747855330545
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      coin_gold_side_0: 6891147310035377761
+      CoinGoldSide_0: 9049029747855330545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

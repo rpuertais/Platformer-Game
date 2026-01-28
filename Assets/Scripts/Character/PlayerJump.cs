@@ -96,6 +96,7 @@ public class PlayerJump : MonoBehaviour
         Grounded = true;
         JumpCount = 0;
         animator.SetBool("IsJumping", false);
+        SetGravity();
     }
     public void GroundNoHitCallBack()
     {
